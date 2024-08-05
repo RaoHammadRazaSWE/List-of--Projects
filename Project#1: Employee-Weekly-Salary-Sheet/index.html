@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Weekly Salary Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee Weekly Salary Sheet</h1>
+    <div class="employee-info">
+        <h2>Employee Information</h2>
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" />
+        <label for="hourlySalary">Hourly Salary:</label>
+        <input type="number" id="hourlySalary" />
+    </div>
+    <div class="work-info">
+        <h2>Work Information</h2>
+        <h3>Regular Hours:</h3>
+        <label for="monHours">Monday Hours:</label>
+        <input type="number" id="monHours" />
+        <label for="tueHours">Tuesday Hours:</label>
+        <input type="number" id="tueHours" />
+        <label for="wedHours">Wednesday Hours:</label>
+        <input type="number" id="wedHours" />
+        <label for="thuHours">Thursday Hours:</label>
+        <input type="number" id="thuHours" />
+        <label for="friHours">Friday Hours:</label>
+        <input type="number" id="friHours" />
+        <label for="satHours">Saturday Hours:</label>
+        <input type="number" id="satHours" />
+        <label for="sunHours">Sunday Hours:</label>
+        <input type="number" id="sunHours" />
+        <h3>Overtime Hours:</h3>
+        <label for="monOvertime">Monday Overtime Hours:</label>
+        <input type="number" id="monOvertime" />
+        <label for="tueOvertime">Tuesday Overtime Hours:</label>
+        <input type="number" id="tueOvertime" />
+        <label for="wedOvertime">Wednesday Overtime Hours:</label>
+        <input type="number" id="wedOvertime" />
+        <label for="thuOvertime">Thursday Overtime Hours:</label>
+        <input type="number" id="thuOvertime" />
+        <label for="friOvertime">Friday Overtime Hours:</label>
+        <input type="number" id="friOvertime" />
+        <label for="satOvertime">Saturday Overtime Hours:</label>
+        <input type="number" id="satOvertime" />
+        <label for="sunOvertime">Sunday Overtime Hours:</label>
+        <input type="number" id="sunOvertime" />
+    </div>
+    <div class="calculate">
+        <button onclick="calculateSalary()">Calculate Salary</button>
+    </div>
+    <div class="result">
+        <h2>Weekly Salary</h2>
+        <p id="salaryResult"></p>
+    </div>
+    <div>
+        <button onclick="exit()">Exit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
