@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(203, 208, 210);
+    margin: 0;
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+h2,
+h3 {
+    
+    color: #333;
+}
+
+form {
+    background: rgb(108, 226, 23);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(145, 96, 96, 0.1);
+}
+
+.rental-info,
+.car-info {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #c79f9f;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #218ad1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c62929;
+}
+
+#totalBill {
+    font-size: 1.2em;
+    color: #73221f;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Car Rental Details</h1>
+    <form id="rental-form">
+        <div class="rental-info">
+            <label for="customerName">Name</label>
+            <input type="text" id="customerName" name="customerName" required>
+            
+            <label for="customerAddress">Address</label>
+            <input type="text" id="customerAddress" name="customerAddress" required>
+            
+            <label for="customerCity">City</label>
+            <input type="text" id="customerCity" name="customerCity" required>
+        </div>
+        <h2>Car Class</h2>
+        <div class="car-info">
+            <h3>Rates and Extras</h3>
+            <p>Class A: Rs. 1000/Hour</p>
+            <p>Class B: Rs. 500/Hour</p>
+            <p>Class C: Rs. 300/Hour</p>
+            <p>Rs. 100/Hour with Driver</p>
+            <p>Rs. 100/Hour with AC</p>
+            <label for="requiredHours">Hours Required</label>
+            <input type="number" id="requiredHours" name="requiredHours" min="1" required>
+            <label for="carClass">Choose One Car Class</label>
+            <select id="carClass" name="carClass" required>
+                <option value="A">Class A</option>
+                <option value="B">Class B</option>
+                <option value="C">Class C</option>
+            </select>
+            <label for="requiredDriver">Driver Required</label>
+            <select id="requiredDriver" name="requiredDriver" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <label for="airConditioned">Air Conditioned</label>
+            <select id="airConditioned" name="airConditioned" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="calculate">
+            <button type="button" onclick="calculateBill()">Calculate Total Bill</button>
+        </div>
+        <p id="totalBill"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
