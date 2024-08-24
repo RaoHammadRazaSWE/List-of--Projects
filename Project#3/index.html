@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Temperature Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weekly Temperature Tracker</h1>
+
+    <div class="temp-info">
+        <!-- Header row for Morning, Noon, Evening -->
+        <div class="header-row">
+            <div>Morning</div>
+            <div>Noon</div>
+            <div>Evening</div>
+        </div>
+
+        <!-- Input rows for each day of the week -->
+        <div class="input-row">
+            <label for="satmorning">Saturday</label>
+            <input type="number" id="satmorning" placeholder="0" />
+            <input type="number" id="satnoon" placeholder="0" />
+            <input type="number" id="satevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="sunmorning">Sunday</label>
+            <input type="number" id="sunmorning" placeholder="0" />
+            <input type="number" id="sunnoon" placeholder="0" />
+            <input type="number" id="sunevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="monmorning">Monday</label>
+            <input type="number" id="monmorning" placeholder="0" />
+            <input type="number" id="monnoon" placeholder="0" />
+            <input type="number" id="monevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="tuemorning">Tuesday</label>
+            <input type="number" id="tuemorning" placeholder="0" />
+            <input type="number" id="tuenoon" placeholder="0" />
+            <input type="number" id="tueevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="wedmorning">Wednesday</label>
+            <input type="number" id="wedmorning" placeholder="0" />
+            <input type="number" id="wednoon" placeholder="0" />
+            <input type="number" id="wedevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="thurmorning">Thursday</label>
+            <input type="number" id="thurmorning" placeholder="0" />
+            <input type="number" id="thurnoon" placeholder="0" />
+            <input type="number" id="thurevening" placeholder="0" />
+        </div>
+        <div class="input-row">
+            <label for="frimorning">Friday</label>
+            <input type="number" id="frimorning" placeholder="0" />
+            <input type="number" id="frinoon" placeholder="0" />
+            <input type="number" id="frievening" placeholder="0" />
+        </div>
+    </div>
+
+    <div class="actions">
+        <button onclick="calculateAverage()">Calculate Average Temperature</button>
+        <button onclick="findMaximum()">Find Maximum Temperature</button>
+    </div>
+<br><br>
+    <div class="reload">
+        <button onclick="exit()">Exit</button>
+    </div>
+    <div id="results">
+        <p id="average-result"></p>
+        <p id="max-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
