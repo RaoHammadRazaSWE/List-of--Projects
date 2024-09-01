@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Student Admission Form</h3> 
+
+        <label for="studentName">Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <label for="studentFName">Father's Name</label>
+        <input type="text" id="studentFName" placeholder="Enter your father's name">
+        
+        <label for="studentAddress">Address</label>
+        <input type="text" id="studentAddress" placeholder="Enter your address">
+        
+        <label for="studentPhone">Phone</label>
+        <input type="tel" id="studentPhone" placeholder="Enter your phone number">
+        
+        <label for="studentCNIC">CNIC</label>
+        <input type="text" id="studentCNIC" placeholder="Enter your CNIC number">
+        
+        <label for="studentEmail">Email</label>
+        <input type="email" id="studentEmail" placeholder="Enter your email">
+
+        <label for="studentBlood">Blood Group</label>
+        <input type="text" id="studentBlood" placeholder="Enter your blood group">
+
+        <h3>Education Level</h3>
+
+        <label>
+            <input type="radio" name="level" value="matric" onclick="toggleSelect('matric')"> Matric
+        </label>
+        <div id="matricSection" class="hidden">
+            <label for="matric">Matric </label>
+            <select name="matric" id="matric" required>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+            </select>
+
+            <label for="matricRollNumber">Roll Number</label>
+            <input type="text" id="matricRollNumber" placeholder="Enter Roll Number">
+            
+            <label for="matricGrade">Grade</label>
+            <input type="text" id="matricGrade" placeholder="Enter Grade">
+            
+            <label for="matricYear">Passing Year</label>
+            <input type="text" id="matricYear" placeholder="Enter Year">
+
+        
+        </div>
+
+        <label>
+            <input type="radio" name="level" value="intermediate" onclick="toggleSelect('intermediate')"> Intermediate
+        </label>
+        <div id="intermediateSection" class="hidden">
+            <label for="intermediate">Intermediate</label>
+            <select name="intermediate" id="intermediate" required>
+                <option value="ICS">ICS</option>
+                <option value="FSC">FSC</option>
+                <option value="FA">FA</option>
+            </select>
+
+            <label for="interRollNumber">Roll Number</label>
+            <input type="text" id="interRollNumber" placeholder="Enter Roll Number">
+            
+            <label for="interGrade">Grade</label>
+            <input type="text" id="interGrade" placeholder="Enter Grade">
+            
+            <label for="interYear">Passing Year</label>
+            <input type="text" id="interYear" placeholder="Enter Year">
+
+        </div>
+        <h3>Get Admission</h3>
+        <label>
+            <input type="radio" name="level" value="undergraduate" onclick="toggleSelect('undergraduate')"> Undergraduate
+        </label>
+        <div id="undergraduateSection" class="hidden">
+            <select name="undergraduate" id="undergraduate" required>
+                <option value="IT">IT</option>
+                <option value="CS">CS</option>
+                <option value="AI">AI</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="No">No</option>
+
+            </select>
+        </div>
+
+        <label>
+            <input type="radio" name="level" value="postgraduate" onclick="toggleSelect('postgraduate')"> Postgraduate
+        </label>
+        <div id="postgraduateSection" class="hidden">
+            <select name="postgraduate" id="postgraduate" required>
+                <option value="MA">MA</option>
+                <option value="MSc">MSc</option>
+                <option value="PhD">PhD</option>
+                <option value="MPhil">MPhil</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <h4>Upload Your Picture</h4>
+        <label for="studentPic">Picture</label>
+        <input type="file" id="studentPic" accept="image/*">
+        <div class="button1">
+            <button onclick="submitForm()">Submit Form</button>
+        </div>
+        <div class="buttons">
+            <button onclick="exitForm()">Restart</button>
+        </div>
+
+        <div id="result" class="result"></div> <!-- Form result will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
